@@ -1,13 +1,15 @@
 import { AbstractDomainEvent } from "../events/domain-event.abstract.js";
+import { StreamEvent } from "../events/stream-event.type.js";
 import { AbstractBasicAggregate } from "./basic-aggregate.abstract.js";
 
 export abstract class AbstractEventSourcedAggregate<
   EventType extends AbstractDomainEvent,
 > extends AbstractBasicAggregate {
-  get streamId(): string {
-    return `${this.aggregateType}-${this.aggregateId}`;
-  }
-
+  /**
+   * Represents the last persisted revision of this aggregate (rehydrated from history).
+   * It MUST NOT be incremented when recording new domain events.
+   * The infrastructure layer is responsible for assigning revisions and enforcing optimistic locking.
+   */
   protected _currentRevision: number = -1;
 
   private _pending_events: EventType[] = [];
@@ -19,9 +21,7 @@ export abstract class AbstractEventSourcedAggregate<
   protected abstract applyEvent<Event extends EventType>(event: Event): void;
 
   protected recordEvent(event: EventType): void {
-    const revision = this._currentRevision + 1;
-    event._stamp(this.streamId, revision);
-    this._currentRevision = revision;
+    this.applyEvent(event);
     this._pending_events.push(event);
   }
 
@@ -33,10 +33,10 @@ export abstract class AbstractEventSourcedAggregate<
     this._pending_events = [];
   }
 
-  public rehydrate(events: EventType[]): this {
-    for (const event of events) {
-      this.applyEvent(event);
-      this._currentRevision = event.revision;
+  public rehydrate(history: StreamEvent<EventType>[]): this {
+    for (const item of history) {
+      this.applyEvent(item.event);
+      this._currentRevision = item.revision;
     }
     return this;
   }
