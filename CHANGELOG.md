@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v1.0.0...ddd-core-v2.0.0) (2026-03-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Domain events no longer contain streamId/revision and aggregates rehydrate from StreamEvent history items. WHY: Because stream id and revision stamping are supposed to be on infrastructure side
+
+### Code Refactoring
+
+* move streamId/revision stamping to infrastructure ([ab30b29](https://github.com/couckedev/ddd-core/commit/ab30b296407862bbfd8f53b6fac57d1c98ca18b1))
+
 ## 1.0.0 (2026-03-18)
 
 
