@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.0.0...ddd-core-v2.1.0) (2026-04-21)
+
+
+### Features
+
+* adding code on business error ([#4](https://github.com/couckedev/ddd-core/issues/4)) ([2c7e481](https://github.com/couckedev/ddd-core/commit/2c7e4814de8fcaca36781978d146f9b1f8bbc617))
+
 ## [2.0.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v1.0.0...ddd-core-v2.0.0) (2026-03-20)
 
 
