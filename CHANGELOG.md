@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.1.0...ddd-core-v2.2.0) (2026-04-22)
+
+
+### Features
+
+* add new concurrency error ([#6](https://github.com/couckedev/ddd-core/issues/6)) ([a179c96](https://github.com/couckedev/ddd-core/commit/a179c96cf1cdf07da44ef20679e893136240b265))
+
 ## [2.1.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.0.0...ddd-core-v2.1.0) (2026-04-21)
 
 
