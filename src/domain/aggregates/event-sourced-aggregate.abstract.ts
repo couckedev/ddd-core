@@ -1,5 +1,5 @@
-import { AbstractDomainEvent } from "../events/domain-event.abstract.js";
-import { StreamEvent } from "../events/stream-event.type.js";
+import type { AbstractDomainEvent } from "../events/domain-event.abstract.js";
+import type { StreamEvent } from "../events/stream-event.type.js";
 import { AbstractBasicAggregate } from "./basic-aggregate.abstract.js";
 
 export abstract class AbstractEventSourcedAggregate<
