@@ -5,7 +5,7 @@ export class Validation {
   static succeed<T>(value: T): ValidationResult<T> {
     return { valid: true, value };
   }
-  static fail(errors: BusinessError[]): ValidationResult<never> {
+  static fail<ErrorType extends BusinessError>(errors: ErrorType[]): ValidationResult<never> {
     return { valid: false, errors };
   }
 }
