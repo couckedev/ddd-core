@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.3.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.2.0...ddd-core-v2.3.0) (2026-06-01)
+
+
+### Features
+
+* **domain:** add validation items to allow cumulative validations ([#8](https://github.com/couckedev/ddd-core/issues/8)) ([465881f](https://github.com/couckedev/ddd-core/commit/465881f50496b2aff8a0352ddc366f7d8a25a150))
+
+
+### Bug Fixes
+
+* **domain:** add generic error type to ValidationResult for proper type inference ([#11](https://github.com/couckedev/ddd-core/issues/11)) ([8fe3eaf](https://github.com/couckedev/ddd-core/commit/8fe3eaf90455fcdbe734a682d020956b081caccb))
+* **domain:** add generic on fail method of validation ([#10](https://github.com/couckedev/ddd-core/issues/10)) ([52f1754](https://github.com/couckedev/ddd-core/commit/52f17548b82e1e24c6e2e99be198aa156d3daac5))
+* **domain:** return concrete branch types from Validation helpers ([#12](https://github.com/couckedev/ddd-core/issues/12)) ([14aa9a4](https://github.com/couckedev/ddd-core/commit/14aa9a43095164be69318a76faa38d2017710ae3))
+
 ## [2.2.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.1.0...ddd-core-v2.2.0) (2026-04-22)
 
 
