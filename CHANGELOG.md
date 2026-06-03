@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.3.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.2.0...ddd-core-v2.3.0) (2026-06-03)
+
+
+### Features
+
+* **domain:** add composite business error type ([#13](https://github.com/couckedev/ddd-core/issues/13)) ([e5276c0](https://github.com/couckedev/ddd-core/commit/e5276c0d0cff3420a40694a4a27b3f0b5faccb0a))
+* **domain:** add helper to assert multiple validation results validity ([#15](https://github.com/couckedev/ddd-core/issues/15)) ([e2456d2](https://github.com/couckedev/ddd-core/commit/e2456d29072c6094ebbeb4fbbc6c44d514691dba))
+* **domain:** add validation items to allow cumulative validations ([#8](https://github.com/couckedev/ddd-core/issues/8)) ([465881f](https://github.com/couckedev/ddd-core/commit/465881f50496b2aff8a0352ddc366f7d8a25a150))
+
+
+### Bug Fixes
+
+* **domain:** add composite business error to barrel excports ([#14](https://github.com/couckedev/ddd-core/issues/14)) ([9dbbf15](https://github.com/couckedev/ddd-core/commit/9dbbf15eb9fdfbf34f567ea93ce5da91ae49d5f4))
+* **domain:** add generic error type to ValidationResult for proper type inference ([#11](https://github.com/couckedev/ddd-core/issues/11)) ([8fe3eaf](https://github.com/couckedev/ddd-core/commit/8fe3eaf90455fcdbe734a682d020956b081caccb))
+* **domain:** add generic on fail method of validation ([#10](https://github.com/couckedev/ddd-core/issues/10)) ([52f1754](https://github.com/couckedev/ddd-core/commit/52f17548b82e1e24c6e2e99be198aa156d3daac5))
+* **domain:** enhance assertValid to add return type ([#16](https://github.com/couckedev/ddd-core/issues/16)) ([86c9ebf](https://github.com/couckedev/ddd-core/commit/86c9ebfa1bd12cde5aaf9d759b1d14ff511e5034))
+* **domain:** return concrete branch types from Validation helpers ([#12](https://github.com/couckedev/ddd-core/issues/12)) ([14aa9a4](https://github.com/couckedev/ddd-core/commit/14aa9a43095164be69318a76faa38d2017710ae3))
+
 ## [2.2.0](https://github.com/couckedev/ddd-core/compare/ddd-core-v2.1.0...ddd-core-v2.2.0) (2026-04-22)
 
 
