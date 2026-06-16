@@ -1,4 +1,9 @@
 export abstract class BusinessError extends Error {
-  public override name = "BusinessError";
-  public abstract readonly code: string;
+  public readonly reason: string;
+
+  constructor(message: string, reason: string) {
+    super(message);
+    this.name = this.constructor.name;
+    this.reason = reason;
+  }
 }
