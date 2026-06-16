@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "Preserve",        // ← laisse tsup gérer le format
+    "moduleResolution": "Bundler", // ← adapté à un bundler comme esbuild
     "lib": ["ES2022"],
-    "outDir": "dist",
-    "rootDir": "src",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
